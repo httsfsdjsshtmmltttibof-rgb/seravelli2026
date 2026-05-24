@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Seravelli — Итальянская Элегантность. Премиальный модный бренд.">
+  <meta name="theme-color" content="#070709">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Seravelli — Italian Elegance</title>
+
+  <!-- Favicon (gold S) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23C9A84C'>S</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== LANGUAGE SWITCHER (Top Left) ========== -->
+  <div class="lang-switcher" id="langSwitcher">
+    <button class="lang-btn active" data-lang="ru" id="langRu">RU</button>
+    <button class="lang-btn" data-lang="uz" id="langUz">UZ</button>
+    <button class="lang-btn" data-lang="en" id="langEn">EN</button>
+    <div class="lang-indicator" id="langIndicator"></div>
+  </div>
+
+  <!-- ========== SAVE CONTACT (Top Right) ========== -->
+  <button class="action-btn btn-save-contact" id="btnSaveContact" aria-label="Сохранить контакт">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-5H7.5L12 6l4.5 5.5H13v5h-2z"/>
+    </svg>
+    <span class="tooltip" data-i18n="saveContact">Сохранить контакт</span>
+  </button>
+
+  <!-- ========== SHARE (Bottom Right) ========== -->
+  <button class="action-btn btn-share" id="btnShare" aria-label="Поделиться">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/>
+    </svg>
+    <span class="tooltip" data-i18n="share">Поделиться</span>
+  </button>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <div class="app-container">
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+      <div class="profile-image-wrapper">
+        <div class="profile-image-ring">
+          <img 
+            class="profile-image" 
+            src="https://i.postimg.cc/g0h6Sk9j/IMG-1142.jpg" 
+            alt="Seravelli"
+            loading="eager"
+          >
+        </div>
+      </div>
+      <h1 class="profile-name">Seravelli</h1>
+      <p class="profile-bio" data-i18n="bio">Итальянская Элегантность</p>
+      <div class="profile-divider">
+        <span class="divider-diamond">◆</span>
+      </div>
+    </section>
+
+    <!-- Links / Buttons Section -->
+    <section class="links-section" id="linksSection">
+
+      <!-- Phone -->
+      <a href="tel:+998900979911" class="link-btn" id="btn-phone" data-track="phone">
+        <div class="link-btn-icon">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <span class="link-btn-text" data-i18n="phone">Телефон</span>
+        <span class="link-btn-arrow">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" fill="currentColor"/></svg>
+        </span>
+      </a>
+
+      <!-- Telegram Channel -->
+      <a href="https://t.me/seravelli" target="_blank" rel="noopener" class="link-btn" id="btn-telegram-channel" data-track="telegram_channel">
+        <div class="link-btn-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 1 0 24 12.056A12.013 12.013 0 0 0 11.944 0Zm5.654 8.22l-1.736 8.19c-.13.587-.477.73-.966.454l-2.666-1.965-1.287 1.24c-.143.143-.262.262-.537.262l.191-2.716 4.94-4.463c.215-.19-.047-.296-.332-.106l-6.108 3.846-2.632-.823c-.572-.18-.583-.572.12-.847l10.282-3.963c.476-.172.893.117.737.847Z"/></svg>
+        </div>
+        <span class="link-btn-text" data-i18n="telegramChannel">Telegram Канал</span>
+        <span class="link-btn-arrow">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" fill="currentColor"/></svg>
+        </span>
+      </a>
+
+      <!-- Оформить заказ, Консультация -->
+      <a href="https://t.me/uz377" target="_blank" rel="noopener" class="link-btn" id="btn-telegram-admin" data-track="telegram_admin">
+        <div class="link-btn-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+        </div>
+        <span class="link-btn-text" data-i18n="telegramAdmin">Оформить заказ, Консультация</span>
+        <span class="link-btn-arrow">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" fill="currentColor"/></svg>
+        </span>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/seravelli.uzbekistan?igsh=NmlkMWE5MTMxZ2x5" target="_blank" rel="noopener" class="link-btn" id="btn-instagram" data-track="instagram">
+        <div class="link-btn-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </div>
+        <span class="link-btn-text">Instagram</span>
+        <span class="link-btn-arrow">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" fill="currentColor"/></svg>
+        </span>
+      </a>
+
+      <!-- Location -->
+      <a href="https://yandex.ru/maps/-/CPsWnDZl" target="_blank" rel="noopener" class="link-btn" id="btn-location" data-track="location">
+        <div class="link-btn-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <span class="link-btn-text" data-i18n="location">Локация</span>
+        <span class="link-btn-arrow">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" fill="currentColor"/></svg>
+        </span>
+      </a>
+
+    </section>
+
+    <!-- Analytics Trigger -->
+    <div class="analytics-trigger">
+      <button class="analytics-trigger-btn" id="btnAnalytics" data-i18n="analytics">
+        ✦ Аналитика ✦
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Seravelli — <span data-i18n="bio">Итальянская Элегантность</span></p>
+    </footer>
+  </div>
+
+  <!-- ========== ANALYTICS MODAL ========== -->
+  <div class="modal-overlay" id="analyticsModal">
+    <div class="modal-content">
+
+      <!-- Password Screen -->
+      <div class="password-screen" id="passwordScreen">
+        <div class="lock-icon">
+          <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2z"/></svg>
+        </div>
+        <h3>Admin Panel</h3>
+        <p data-i18n="enterPassword">Введите пароль для продолжения</p>
+        <div class="password-input-group">
+          <input 
+            type="password" 
+            id="passwordInput" 
+            placeholder="••••••••" 
+            autocomplete="off"
+            maxlength="20"
+          >
+        </div>
+        <p class="password-error" id="passwordError" data-i18n="wrongPassword">Неверный пароль. Попробуйте ещё раз.</p>
+        <button class="password-submit" id="passwordSubmit" data-i18n="login">Войти</button>
+      </div>
+
+      <!-- Analytics Dashboard -->
+      <div class="analytics-dashboard" id="analyticsDashboard">
+        <div class="analytics-header">
+          <h3 data-i18n="analyticsTitle">📊 Аналитика</h3>
+          <button class="analytics-close-btn" id="analyticsClose">✕</button>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-value" id="statTotalVisits">0</div>
+            <div class="stat-label" data-i18n="totalVisits">Всего посещений</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="statTotalClicks">0</div>
+            <div class="stat-label" data-i18n="totalClicks">Всего кликов</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="statTodayVisits">0</div>
+            <div class="stat-label" data-i18n="todayVisits">Посещений сегодня</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" id="statUniqueVisitors">0</div>
+            <div class="stat-label" data-i18n="uniqueVisitors">Уникальные посетители</div>
+          </div>
+        </div>
+
+        <!-- Click Distribution -->
+        <div class="click-section">
+          <div class="section-title" data-i18n="buttonClicks">Нажатия кнопок</div>
+          <div id="clickDistribution">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <!-- Visitor Log -->
+        <div class="visitor-log-section">
+          <div class="section-title" data-i18n="recentVisitors">Последние посетители</div>
+          <div class="visitor-log" id="visitorLog">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Scripts -->
+  <script src="firebase-db.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
